@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="org.apache.sling.samples.pathbasedrtp.PathBasedResourceDecorator" name="%defaultRtp.name" description="%defaultRtp.description">
+        <AD id="path.mapping" type="String" default="/content:2,/sling-test-pbrt:2" name="%path.mapping.name" description="%path.mapping.description" cardinality="2147483647"/>
+    </OCD>
+    <Designate pid="org.apache.sling.samples.pathbasedrtp.PathBasedResourceDecorator">
+        <Object ocdref="org.apache.sling.samples.pathbasedrtp.PathBasedResourceDecorator"/>
+    </Designate>
+</metatype:MetaData>

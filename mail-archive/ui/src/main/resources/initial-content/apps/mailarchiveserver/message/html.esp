@@ -1,0 +1,87 @@
+<%
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *   
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+%>
+
+<html>
+
+<head>
+<link rel="stylesheet" href="/apps/mailarchiveserver/styles.css"/>
+<script type="text/javascript" src="/apps/mailarchiveserver/util.js"></script>
+<title>
+	From 
+	<% 
+		var from = currentNode.From
+		out.print(from.match(/\w+ \w+/))
+	%>, 
+	<%
+		out.print(currentNode.Subject)
+	%> 
+</title>
+</head>
+
+<body>
+<% sling.include(currentNode.getPath(), "forceResourceType=mailarchiveserver,replaceSelectors=navbar"); %>
+
+<div class="message">
+	<div class="header">
+		<span class="from">	
+		From 
+		<% 
+			var from = currentNode["From"];
+			if (from.indexOf(" ") > 0)
+				out.print(from.substring(0, from.indexOf(" ")))
+			else
+				out.print(from)
+		%> 
+		</span>
+		<span class="date">
+		<%
+			var d = new Date(currentNode["Date"])
+			var now = Date.now()
+			if (now - d.value < 79200000)
+				out.print(d.getHours()+":"+d.getMinutes())
+			else {
+				var m_names = new Array("Jan", "Feb", "Mar", 
+					"Apr", "May", "Jun", "Jul", "Aug", "Sep", 
+					"Oct", "Nov", "Dec")
+				out.print(m_names[d.getMonth()]+" "+d.getDate())
+			}
+		%>
+		</span>
+		<br/>
+		<a class="nolinkstyle" href="<%= currentNode.getParent().getPath() %>.html"><%= currentNode["Subject"] %></a>
+	</div>
+	<div class="body">
+		<%  
+			var lines = currentNode["Body"].split('\n');
+			for (i in lines) {
+				var line = lines[i];
+		%>
+		<script type="text/javascript">
+			document.write(toHtmlString("<%= new String(line) %>"));
+		</script>
+		<%
+				out.print("<br>");
+			}
+		%>
+	</div>
+</div>
+</body>
+</html>

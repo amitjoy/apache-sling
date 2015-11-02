@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jackrabbit-ocm>
+
+  <!--
+      Class: org.apache.sling.sample.SampleContent
+  -->
+  <class-descriptor
+     className="org.apache.sling.sample.SampleContent"
+     jcrType="sling:SampleContent"
+     extend="org.apache.sling.jcr.ocm.AbstractMappedObject">
+
+    <field-descriptor
+       fieldName="title" />
+
+    <field-descriptor
+       fieldName="text" />
+  </class-descriptor>
+
+  <!--
+      Class: org.apache.sling.sample.SamplePage
+  -->
+  <class-descriptor
+     className="org.apache.sling.sample.SamplePage"
+     jcrType="sling:SamplePage"
+     extend="org.apache.sling.jcr.ocm.AbstractMappedObject">
+
+    <field-descriptor
+       fieldName="title" />
+  </class-descriptor>
+</jackrabbit-ocm>

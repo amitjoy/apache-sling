@@ -1,0 +1,95 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Sling Sample Application
+
+
+From: 'an unknown organization'
+  - cglib (http://cglib.sourceforge.net/) cglib:cglib:jar:2.1_3
+
+  - commons-beanutils  commons-beanutils:commons-beanutils:jar:1.7.0
+
+  - commons-logging  commons-logging:commons-logging:jar:1.0
+
+  - el-api  org.apache.tomcat:el-api:jar:6.0.14
+
+  - jasper-el  org.apache.tomcat:jasper-el:jar:6.0.14
+
+  - jasper-jdt  org.apache.tomcat:jasper-jdt:jar:6.0.14
+
+  - jsp-api  org.apache.tomcat:jsp-api:jar:6.0.14
+
+  - juli  org.apache.tomcat:juli:jar:6.0.14
+
+  - servlet-api  org.apache.tomcat:servlet-api:jar:6.0.14
+
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - Apache BSF API (http://jakarta.apache.org/bsf/bsf-api/) org.apache.bsf:bsf-api:jar:3.0-beta2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XML Commons External Components XML APIs (http://xml.apache.org/commons/#external) xml-apis:xml-apis:jar:1.0.b2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'kObjects.org' (http://kobjects.org/)
+  - kXML 2 (http://kxml.sourceforge.net/kxml2) net.sf.kxml:kxml2:jar:2.2.2
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.html)
+
+From: 'ObjectWeb' (http://www.objectweb.org/)
+  - asm (http://asm.objectweb.org/) asm:asm:jar:1.5.3
+
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Digester (http://jakarta.apache.org/commons/digester/) commons-digester:commons-digester:jar:1.7
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - FileUpload (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-fileupload:commons-fileupload:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - IO (http://jakarta.apache.org/commons/io/) commons-io:commons-io:jar:1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Lang (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-lang:commons-lang:jar:2.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Felix Web Management Console (http://felix.apache.org/org.apache.felix.webconsole/) org.apache.felix:org.apache.felix.webconsole:bundle:1.2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit API (http://jackrabbit.apache.org/jackrabbit-api/) org.apache.jackrabbit:jackrabbit-api:jar:1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit Repository Classloader (http://jackrabbit.apache.org/jackrabbit-classloader/) org.apache.jackrabbit:jackrabbit-classloader:jar:1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit JCR Commons (http://jackrabbit.apache.org/jackrabbit-jcr-commons/) org.apache.jackrabbit:jackrabbit-jcr-commons:bundle:1.4.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit Object Content Mapping (http://jackrabbit.apache.org/jackrabbit-ocm/) org.apache.jackrabbit:jackrabbit-ocm:jar:1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - AdapterManager implementation (http://incubator.apache.org/sling/org.apache.sling.adapter) org.apache.sling:org.apache.sling.adapter:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Sling API (http://sling.apache.org/org.apache.sling.api) org.apache.sling:org.apache.sling.api:bundle:2.0.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Sling Dynamic Class Loader Support (http://sling.apache.org/org.apache.sling.commons.classloader) org.apache.sling:org.apache.sling.commons.classloader:bundle:0.9.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - MIME type mapping support (http://incubator.apache.org/sling/org.apache.sling.commons.mime) org.apache.sling:org.apache.sling.commons.mime:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Commons OSGi support (http://incubator.apache.org/sling/org.apache.sling.commons.osgi) org.apache.sling:org.apache.sling.commons.osgi:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Sling Engine Implementation (http://sling.apache.org/org.apache.sling.engine) org.apache.sling:org.apache.sling.engine:bundle:2.0.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Repository API Bundle (http://incubator.apache.org/sling/org.apache.sling.jcr.api) org.apache.sling:org.apache.sling.jcr.api:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Repository ClassLoader (http://incubator.apache.org/sling/org.apache.sling.jcr.classloader) org.apache.sling:org.apache.sling.jcr.classloader:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Object Content Mapping (http://incubator.apache.org/sling/org.apache.sling.jcr.ocm) org.apache.sling:org.apache.sling.jcr.ocm:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Sling Resource Resolver (http://sling.apache.org/org.apache.sling.jcr.resource) org.apache.sling:org.apache.sling.jcr.resource:bundle:2.0.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Scripting Implementation API (http://incubator.apache.org/sling/org.apache.sling.scripting.api) org.apache.sling:org.apache.sling.scripting.api:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Scripting - JSP Support (http://incubator.apache.org/sling/org.apache.sling.scripting.jsp) org.apache.sling:org.apache.sling.scripting.jsp:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Sling - Scripting - JSP Support, Core Tag Library (http://incubator.apache.org/sling/org.apache.sling.scripting.jsp.taglib) org.apache.sling:org.apache.sling.scripting.jsp.taglib:bundle:2.0.2-incubator
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

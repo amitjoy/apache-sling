@@ -1,0 +1,26 @@
+{
+	  "jcr:title" : "Home",
+	  "title" : "Demo Title",
+      "sling:resourceType" : "slingdemo:base",
+      "content":{
+      	"sling:resourceType": "slingdemo:contentpage"
+      },
+      "page-builder": {
+      	"jcr:title" : "Page Builder",
+	  	"title" : "Page Builder",
+      	"sling:resourceType" : "slingdemo:base",
+      	"content":{
+      		"sling:resourceType": "slingdemo:pagebuilder"
+      	}
+      
+      },
+      "image-upload": {
+      	"jcr:title" : "Image Upload",
+	  	"title" : "Image Uplaod",
+      	"sling:resourceType" : "slingdemo:base",
+      	"content":{
+      		"sling:resourceType": "slingdemo:imageupload"
+      	}
+      
+      }
+}

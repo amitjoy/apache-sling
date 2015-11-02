@@ -1,1 +1,1 @@
-# apache-sling
+# Apache Sling Practice Examples

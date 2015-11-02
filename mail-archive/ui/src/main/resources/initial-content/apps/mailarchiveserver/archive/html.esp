@@ -1,0 +1,80 @@
+<%
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *   
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+%>
+
+<html>
+
+<head>
+<% load("../head.esp"); %>
+<title>Mail archive</title>
+</head>
+
+<body>
+
+<% sling.include(currentNode.getPath(), "forceResourceType=mailarchiveserver,replaceSelectors=navbar"); %>
+
+<div class="content">
+
+<table width="100%">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<%
+	var cnt = 0;
+	var archiveChildren = currentNode.getChildren();
+	for(i in archiveChildren) {
+		var domain = archiveChildren[i];
+%>
+
+	<td>
+	<div class="domain">
+		<h4><%= domain["jcr:text"] %>  lists:</h4>
+		<ul>
+<%
+		var domainChildren = domain.getChildren();
+		for(k in domainChildren) {
+			var list = domainChildren[k];
+%>
+			<li><a href="<%= list.getPath() %>.html">  <%= list["jcr:text"] %></a></li>
+<% 
+		}
+%>
+		</ul>
+	</div>
+	</td>
+
+<% 
+		if (cnt % 3 == 2)
+			out.print("</tr>");
+		cnt++;
+	}
+	if (cnt % 3 != 2)
+		out.print("</tr>");
+%>
+
+</table>
+</div>
+
+
+</body>
+
+</html>

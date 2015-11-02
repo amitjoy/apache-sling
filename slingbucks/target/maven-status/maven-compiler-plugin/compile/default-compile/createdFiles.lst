@@ -1,0 +1,3 @@
+org/apache/sling/slingbucks/server/SlingbucksConstants.class
+org/apache/sling/slingbucks/server/HexNodeNameGenerator.class
+org/apache/sling/slingbucks/server/ConfirmedOrdersObserver.class

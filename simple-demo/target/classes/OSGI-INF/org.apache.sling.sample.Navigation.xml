@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.apache.sling.sample.Navigation">
+        <implementation class="org.apache.sling.sample.Navigation"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="service.description" value="Sample Navigation Component"/>
+        <property name="sling.servlet.resourceTypes" value="sling/sample.navigation"/>
+        <property name="sling.servlet.methods" value="html"/>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.sample.Navigation"/>
+    </scr:component>
+</components>

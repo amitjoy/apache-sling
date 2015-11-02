@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="org.apache.sling.additions.post.POSTResponseCreator">
+        <implementation class="org.apache.sling.additions.post.POSTResponseCreator"/>
+        <service servicefactory="false">
+            <provide interface="org.apache.sling.servlets.post.PostResponseCreator"/>
+        </service>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.additions.post.POSTResponseCreator"/>
+    </scr:component>
+</components>

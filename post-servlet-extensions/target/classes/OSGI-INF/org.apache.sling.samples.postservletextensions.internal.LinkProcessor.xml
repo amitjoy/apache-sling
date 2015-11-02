@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.apache.sling.samples.postservletextensions.internal.LinkProcessor">
+        <implementation class="org.apache.sling.samples.postservletextensions.internal.LinkProcessor"/>
+        <service servicefactory="false">
+            <provide interface="org.apache.sling.servlets.post.SlingPostProcessor"/>
+        </service>
+        <property name="sling.post.processor" value="link"/>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.samples.postservletextensions.internal.LinkProcessor"/>
+    </scr:component>
+</components>

@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1400720103801
+Build-Jdk: 1.6.0_65
+Built-By: AMIT
+Bundle-Category: sling,jcr
+Bundle-Description: Provides a configurable path-based sample resource t
+ ype provider        for resources which do not have an explicit one.
+Bundle-DocURL: http://sling.apache.org
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Sling Sample Path Based Resource Type Provider
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.apache.sling.samples.path-based.rtp
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.5.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.sling.samples.pathbasedrtp;version="2.0.5.SNA
+ PSHOT";uses:="javax.servlet.http,org.apache.sling.api.resource,org.osgi
+ .service.component"
+Import-Package: javax.jcr;version="1.0",javax.jcr.nodetype;version="1.0"
+ ,javax.servlet.http,org.apache.sling.api.resource;version="[2.1,3)",org
+ .osgi.service.component;version="[1.0,2)",org.slf4j;version="[1.5,2)"
+Originally-Created-By: Apache Maven Bundle Plugin
+Service-Component: OSGI-INF/org.apache.sling.samples.pathbasedrtp.PathBa
+ sedResourceDecorator.xml
+Tool: Bnd-2.1.0.20130426-122213

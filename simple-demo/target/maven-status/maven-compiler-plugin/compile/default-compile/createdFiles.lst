@@ -1,0 +1,6 @@
+org/apache/sling/sample/SampleContent.class
+org/apache/sling/sample/SamplePage.class
+org/apache/sling/sample/filter/ZipFilter$DeflaterComponentResponse$DeflaterServletOutputStream.class
+org/apache/sling/sample/Navigation.class
+org/apache/sling/sample/filter/ZipFilter.class
+org/apache/sling/sample/filter/ZipFilter$DeflaterComponentResponse.class

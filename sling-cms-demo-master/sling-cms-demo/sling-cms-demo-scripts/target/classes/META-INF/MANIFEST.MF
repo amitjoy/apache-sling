@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Built-By: AMIT
+Build-Jdk: 1.6.0_65
+Bundle-Version: 0.0.1.SNAPSHOT
+Tool: Bnd-0.0.357
+Bundle-Name: sling-cms-demo-scripts
+Bnd-LastModified: 1400720106898
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-Description: com.paulinsolutions - sling-cms-demo-scripts
+Bundle-SymbolicName: com.paulinsolutions.sling-cms-demo-scripts
+Sling-Initial-Content: SLING-INF/apps/slingdemo;overwrite:=true;uninst
+ all:=true;path:=/apps/slingdemo,                            SLING-INF
+ /content/slingdemo;overwrite:=true;uninstall:=true;path:=/content/sli
+ ngdemo
+

@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1400720096925
+Build-Jdk: 1.6.0_65
+Built-By: AMIT
+Bundle-Category: sling
+Bundle-Description: REST-full node editor
+Bundle-DocURL: http://sling.apache.org
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: RESTed
+Bundle-SymbolicName: com.neogenlabs.rested
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.petebevin.markdown;version="0.0.1.SNAPSHOT"
+Ignore-Package: org.apache.tools.ant.filters,org.apache.tools.ant.types
+Import-Package: javax.servlet,javax.servlet.http,org.apache.sling.api;ve
+ rsion="[2.1,3)",org.apache.sling.api.request;version="[2.1,3)",org.apac
+ he.sling.api.wrappers;version="[2.1,3)",org.apache.sling.servlets.post;
+ version="[2.1,3)",org.apache.sling.settings;version="[1.0,2)"
+Sling-Initial-Content: initial-content
+Tool: Bnd-1.50.0

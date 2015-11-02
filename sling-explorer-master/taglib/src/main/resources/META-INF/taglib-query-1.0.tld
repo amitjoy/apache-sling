@@ -1,0 +1,62 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>A supporting tag library for search functions</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>q</short-name>
+    <uri>http://sling.apache.org/taglibs/q</uri>
+
+    <tag>
+        <description>Performs and XPath query</description>
+        <name>xpathQuery</name>
+        <tag-class>org.apache.sling.explorer.taglib.query.XpathQueryTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>query</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>
+                The name of the variable to which to save the resource.
+            </description>
+            <name>var</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>Searches a node by node name.Returns a NodeIterator containing the list of nodes found according to query.</description>
+        <name>searchByName</name>
+        <tag-class>org.apache.sling.explorer.taglib.query.SearchByNameTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>The base path of the node. The search will be done using ISDESCENDANTNODE(basePath). Defaults to "/"</description>
+            <name>basePath</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The type of the node. Defaults to "nt:base"</description>
+            <name>baseType</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The name of the node</description>
+            <name>nodeName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Holds the query result set. </description>
+            <name>resultVar</name>
+            <required>true</required>
+            <rtexprvalue>false</rtexprvalue>
+        </attribute>
+    </tag>
+
+</taglib>
+        

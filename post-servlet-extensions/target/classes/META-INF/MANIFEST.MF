@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1400720104159
+Build-Jdk: 1.6.0_65
+Built-By: AMIT
+Bundle-Category: sling
+Bundle-Description: This bundle provides sample OSGI services which exte
+ nd the sling post servlet behaviour.
+Bundle-DocURL: http://sling.apache.org
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Sling Sample Post Servlet Extensions
+Bundle-SymbolicName: org.apache.sling.samples.post-servlet-extensions
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 0.1.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: javax.jcr;version="1.0",org.apache.sling.api;version="[2
+ .0,3)",org.apache.sling.api.request;version="[2.0,3)",org.apache.sling.
+ api.resource;version="[2.0,3)",org.apache.sling.api.servlets;version="[
+ 2.0,3)",org.apache.sling.servlets.post;version="[2.0,3)"
+Originally-Created-By: Apache Maven Bundle Plugin
+Service-Component: OSGI-INF/org.apache.sling.samples.postservletextensio
+ ns.internal.LinkOperation.xml,OSGI-INF/org.apache.sling.samples.postser
+ vletextensions.internal.LinkProcessor.xml
+Tool: Bnd-2.1.0.20130426-122213

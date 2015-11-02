@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1400720104679
+Build-Jdk: 1.6.0_65
+Built-By: AMIT
+Bundle-Category: sling
+Bundle-Description: This bundle provides a simple Apache Sling Applicati
+ on to show        some of the features and functionalities of Apache Sl
+ ing, such        as node type definition, content mapping, running JSPs
+  off the        repository and the bundle.
+Bundle-DocURL: http://sling.apache.org
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Sling Sample Application
+Bundle-SymbolicName: org.apache.sling.samples.simple-demo
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.sling.sample;version="2.0.3.SNAPSHOT";uses:="
+ javax.servlet,org.apache.sling.api,org.apache.sling.api.servlets,org.ap
+ ache.sling.jcr.ocm"
+Import-Package: javax.servlet,org.apache.sling.api;version="[2.0,3)",org
+ .apache.sling.api.resource;version="[2.0,3)",org.apache.sling.api.servl
+ ets;version="[2.0,3)",org.apache.sling.api.wrappers;version="[2.0,3)",o
+ rg.apache.sling.engine;version="[2.0,3)",org.apache.sling.jcr.ocm;versi
+ on="[2.0,3)"
+Originally-Created-By: Apache Maven Bundle Plugin
+Service-Component: OSGI-INF/org.apache.sling.sample.Navigation.xml,OSGI-
+ INF/org.apache.sling.sample.filter.ZipFilter.xml
+Sling-Bundle-Resources: /apps/sling/sample,/classes/org/apache/jsp/apps/
+ sling/sample
+Sling-Initial-Content: SLING-INF/content
+Sling-Nodetypes: SLING-INF/nodetypes/test.cnd
+Tool: Bnd-2.1.0.20130426-122213

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1400720103498
+Build-Jdk: 1.6.0_65
+Built-By: AMIT
+Bundle-Category: sling
+Bundle-Description: Sample applications that executes java code snippets
+         defined by content nodes, includes a simple editing form.
+Bundle-DocURL: http://sling.apache.org
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Sling Javashell sample
+Bundle-SymbolicName: org.apache.sling.samples.javashell
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.0.3.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Originally-Created-By: Apache Maven Bundle Plugin
+Sling-Initial-Content: initial-content
+Tool: Bnd-2.1.0.20130426-122213

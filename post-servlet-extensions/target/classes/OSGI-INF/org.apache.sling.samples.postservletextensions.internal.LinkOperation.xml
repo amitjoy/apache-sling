@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="org.apache.sling.samples.postservletextensions.internal.LinkOperation">
+        <implementation class="org.apache.sling.samples.postservletextensions.internal.LinkOperation"/>
+        <service servicefactory="false">
+            <provide interface="org.apache.sling.servlets.post.SlingPostOperation"/>
+        </service>
+        <property name="sling.post.operation" value="link"/>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.samples.postservletextensions.internal.LinkOperation"/>
+    </scr:component>
+</components>

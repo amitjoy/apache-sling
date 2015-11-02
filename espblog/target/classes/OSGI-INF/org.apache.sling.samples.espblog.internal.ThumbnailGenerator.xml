@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="org.apache.sling.samples.espblog.internal.ThumbnailGenerator">
+        <implementation class="org.apache.sling.samples.espblog.internal.ThumbnailGenerator"/>
+        <property name="service.description" value="Sling ESP blog sample thumbnails generator"/>
+        <property name="content.path" value="/content/espblog"/>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.samples.espblog.internal.ThumbnailGenerator"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+    </scr:component>
+</components>

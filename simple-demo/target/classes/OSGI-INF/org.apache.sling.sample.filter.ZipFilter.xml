@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="false" name="org.apache.sling.sample.filter.ZipFilter">
+        <implementation class="org.apache.sling.sample.filter.ZipFilter"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Filter"/>
+        </service>
+        <property name="service.description" value="Sample Request Filter"/>
+        <property name="filter.scope" value="request"/>
+        <property name="filter.order" type="Integer" value="-2147483647"/>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.sample.filter.ZipFilter"/>
+    </scr:component>
+</components>

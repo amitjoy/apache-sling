@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component name="org.apache.sling.additions.post.POSTServletFilter" activate="activate" deactivate="deactivate">
+        <implementation class="org.apache.sling.additions.post.POSTServletFilter"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Filter"/>
+        </service>
+        <property name="javax.servlet.Filter" value="POSTServletFilter"/>
+        <property name="sling.filter.scope" value="REQUEST"/>
+        <property name="service.ranking" type="Integer" value="2147483647"/>
+        <property name="service.vendor" value="The Apache Software Foundation"/>
+        <property name="service.pid" value="org.apache.sling.additions.post.POSTServletFilter"/>
+        <reference name="settings" interface="org.apache.sling.settings.SlingSettingsService" cardinality="1..1" policy="static" bind="bindSettings" unbind="unbindSettings"/>
+    </scr:component>
+</components>

@@ -1,0 +1,15 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+RESTed
+
+
+From: 'an unknown organization'
+  - markdownj  org.markdownj:markdownj:jar:0.3.0-1.0.2b4
+    License: BSD license 
+
+
+
+
